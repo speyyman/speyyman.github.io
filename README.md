@@ -63,8 +63,6 @@ Built an Android app in **Kotlin** and **SQLite** to manage orders and inventory
 - Occasional chess player and indie game developer in Unity
 
 ---
-
-### [Download Resume](./assets/saeed_resume.pdf)
  
 For contact, collaborations, or mentorship, feel free to reach out via [email](mailto:saeed.peyman@gmail.com).
 
