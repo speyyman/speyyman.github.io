@@ -1,0 +1,308 @@
+/* ==========================================================================
+   Portfolio — Responsive styles
+   Desktop-first overrides. Breakpoints:
+     ≤ 1100px  small laptop
+     ≤ 960px   tablet (landscape) — hamburger navigation kicks in
+     ≤ 720px   tablet (portrait) / large phone
+     ≤ 480px   phone
+   ========================================================================== */
+
+/* ≤ 1100px — small laptop
+   ========================================================================== */
+@media (max-width: 1100px) {
+  .float-card--1 {
+    left: -12px;
+  }
+
+  .float-card--2 {
+    right: -8px;
+  }
+
+  .steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* ≤ 960px — tablet: mobile navigation, stacked layouts
+   ========================================================================== */
+@media (max-width: 960px) {
+  :root {
+    --header-h: 64px;
+  }
+
+  /* Mobile navigation panel */
+  .nav__toggle {
+    display: grid;
+    order: 3;
+  }
+
+  .nav__menu {
+    position: fixed;
+    top: var(--header-h);
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+    max-height: calc(100vh - var(--header-h));
+    max-height: calc(100dvh - var(--header-h));
+    padding: 16px var(--gutter) 28px;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg);
+    box-shadow: var(--shadow-lg);
+    overflow-y: auto;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-12px);
+    transition: opacity var(--dur) ease, transform var(--dur) var(--ease), visibility var(--dur);
+  }
+
+  /* visibility switches on instantly so links are focusable right away */
+  .nav-open .nav__menu {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    transition: opacity var(--dur) ease, transform var(--dur) var(--ease), visibility 0s;
+  }
+
+  .nav__link {
+    padding: 14px 16px;
+    border-radius: var(--radius-sm);
+    font-size: 1.05rem;
+  }
+
+  /* Dim the page behind the open menu */
+  .nav-open::after {
+    content: "";
+    position: fixed;
+    inset: var(--header-h) 0 0;
+    z-index: 50;
+    background: rgba(5, 8, 20, 0.45);
+    animation: page-in 0.3s ease both;
+  }
+
+  .nav-open {
+    overflow: hidden;
+  }
+
+  /* Hero */
+  .hero__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__content {
+    text-align: center;
+  }
+
+  .hero__tagline {
+    margin-inline: auto;
+  }
+
+  .hero__ctas,
+  .hero__social {
+    justify-content: center;
+  }
+
+  .hero__visual {
+    max-width: 560px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .code-window {
+    transform: none;
+  }
+
+  /* Grids */
+  .grid--3,
+  .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .grid--4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .stat:nth-child(3) {
+    border-left: 0;
+  }
+
+  .stat:nth-child(n + 3) {
+    border-top: 1px solid var(--border);
+  }
+
+  /* About */
+  .about-intro {
+    grid-template-columns: 1fr;
+  }
+
+  .portrait {
+    position: relative;
+    top: 0;
+    max-width: 380px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  /* Contact */
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* Footer */
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer__about {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ≤ 720px — portrait tablet / large phone
+   ========================================================================== */
+@media (max-width: 720px) {
+  :root {
+    --gutter: 20px;
+  }
+
+  .nav__logo-text {
+    display: none;
+  }
+
+  .grid--2,
+  .grid--3,
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section__header--split {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .float-card {
+    display: none;
+  }
+
+  /* Keep the decorative frame inside the page gutter */
+  .portrait::before {
+    inset: 12px -10px -12px 10px;
+  }
+
+  .card {
+    padding: 26px 22px;
+  }
+
+  .skill-group {
+    padding: 26px 22px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .contact-info {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline__item {
+    padding-left: 40px;
+  }
+
+  .timeline .card {
+    padding: 22px 20px;
+  }
+
+  .faq summary {
+    padding: 18px 20px;
+  }
+
+  .faq details p {
+    padding: 0 20px 20px;
+  }
+}
+
+/* ≤ 480px — phone
+   ========================================================================== */
+@media (max-width: 480px) {
+  :root {
+    --gutter: 16px;
+  }
+
+  .hero__ctas .btn,
+  .cta-band .btn {
+    width: 100%;
+  }
+
+  .hero__social {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .grid--4,
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  .stat {
+    padding: 22px 12px;
+  }
+
+  .facts {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-card__links .btn {
+    flex: 1;
+  }
+
+  .back-to-top {
+    right: 16px;
+    bottom: 16px;
+  }
+
+  .code-window pre {
+    padding: 18px 16px 20px;
+  }
+}
+
+/* Large screens: a touch more breathing room
+   ========================================================================== */
+@media (min-width: 1440px) {
+  :root {
+    --container: 1240px;
+  }
+}
+
+/* Touch devices: no hover lift that sticks after tapping */
+@media (hover: none) {
+  .card--hover:hover,
+  .project-card:hover,
+  .btn:hover,
+  .badge:hover {
+    transform: none;
+  }
+
+  .project-card:hover .project-card__media img {
+    transform: none;
+  }
+}

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ea580c"/><stop offset="1" stop-color="#be123c"/></linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="710" cy="70" r="150" fill="#fff" opacity=".08"/>
+  <circle cx="60" cy="470" r="110" fill="#fff" opacity=".06"/>
+  <rect x="70" y="60" width="660" height="380" rx="16" fill="#fff"/>
+  <rect x="100" y="140" width="120" height="54" rx="12" fill="#eef2ff" stroke="#c7d2fe"/>
+  <text x="160" y="173" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#3730a3" text-anchor="middle">Source A</text>
+  <path d="M226 167 L300 250" stroke="#818cf8" stroke-width="3" stroke-linecap="round" fill="none" stroke-dasharray="6 6"/>
+  <circle cx="300" cy="250" r="5" fill="#818cf8"/>
+  <rect x="100" y="218" width="120" height="54" rx="12" fill="#eef2ff" stroke="#c7d2fe"/>
+  <text x="160" y="251" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#3730a3" text-anchor="middle">Source B</text>
+  <path d="M226 245 L300 250" stroke="#818cf8" stroke-width="3" stroke-linecap="round" fill="none" stroke-dasharray="6 6"/>
+  <circle cx="300" cy="250" r="5" fill="#818cf8"/>
+  <rect x="100" y="296" width="120" height="54" rx="12" fill="#eef2ff" stroke="#c7d2fe"/>
+  <text x="160" y="329" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#3730a3" text-anchor="middle">Source C</text>
+  <path d="M226 323 L300 250" stroke="#818cf8" stroke-width="3" stroke-linecap="round" fill="none" stroke-dasharray="6 6"/>
+  <circle cx="300" cy="250" r="5" fill="#818cf8"/>
+  <rect x="310" y="190" width="150" height="120" rx="12" fill="#fff7ed" stroke="#fed7aa"/>
+  <text x="385" y="240" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15" font-weight="700" fill="#9a3412" text-anchor="middle">AWS Lambda</text>
+  <text x="385" y="266" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="500" fill="#9a3412" text-anchor="middle">extract &#183; transform</text>
+  <path d="M466 250 L540 250" stroke="#fb923c" stroke-width="3" stroke-linecap="round" fill="none" stroke-dasharray="6 6"/>
+  <circle cx="540" cy="250" r="5" fill="#fb923c"/>
+  <path d="M560 190 v100 a50 20 0 0 0 100 0 v-100" fill="#ecfeff" stroke="#67e8f9" stroke-width="2"/>
+  <ellipse cx="610" cy="190" rx="50" ry="20" fill="#cffafe" stroke="#67e8f9" stroke-width="2"/>
+  <text x="610" y="250" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14" font-weight="700" fill="#0e7490" text-anchor="middle">Data</text>
+  <text x="610" y="270" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13" font-weight="700" fill="#0e7490" text-anchor="middle">warehouse</text>
+
+</svg>
