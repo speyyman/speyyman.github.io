@@ -1,68 +1,76 @@
-# Data Scientist
+# Saeed Peyman: Portfolio
 
-#### Technical Skills: Python, R, SQL, SAS, Django, Tableau, Power BI, ETL Pipelines, PyTorch, PostgreSQL, AWS, GCP
+Personal portfolio for Saeed Peyman, a software and data engineer based in Nashville, Tennessee. Live at **<https://speyyman.github.io>**.
 
-## Education
-- M.S., Data Science | Michigan Technological University (_Dec 2024_)  
-- Certificate, Computer & Data Science | MIT ReACT (_Jan 2023_)  
-- B.Sc., Information Technology | American University of Afghanistan (_Apr 2022_)
+Built with **HTML5, CSS3 and vanilla JavaScript**: no frameworks, no build step, no dependencies.
 
-## Work Experience
+## Pages
 
-**Intern Data Engineer @ RealogicWorks (_Jan 2024 – Dec 2024_)**  
-- Built secure data-sharing APIs for a credential management platform used by hospitals across the U.S.  
-- Automated ETL workflows that enhanced document verification speed by 35%  
-- Collaborated with QA and compliance teams to ensure HIPAA-aligned data security standards  
+- **Home**: introduction, featured projects and services
+- **About**: background, experience, education and working values
+- **Portfolio**: six engineering case studies, filterable by Data, Backend & APIs and Architecture
+- **Skills**: technical skills, domains worked in, services and process
+- **Contact**: email and social links, a contact form and a short FAQ
 
-**Graduate Teaching Assistant @ Michigan Tech (_Aug 2023 – Dec 2023_)**  
-- Facilitated tutorials in data science courses, covering machine learning, statistics, and SQL  
-- Assisted students with project design, debugging, and conceptual understanding  
-- Supported curriculum development, ensuring practical alignment with industry standards  
+## Features
 
-**Full Stack Software Engineer @ Key Bytes (_Apr 2019 – Aug 2021_)**  
-- Designed and deployed full-stack applications with Django, Vue, and PostgreSQL for fintech and education clients  
-- Optimized front-end UX and integrated RESTful APIs, improving user retention by over 20%  
-- Led agile development sprints and coordinated with freelance teams across multiple time zones  
+- Light/dark mode that follows the OS setting, remembers the visitor's choice and doesn't flash the wrong theme on load
+- Responsive from 320px phones to wide desktops, with a hamburger menu below 960px
+- Scroll-reveal animations, page fade transitions and a first-visit loading animation, all disabled for `prefers-reduced-motion`
+- Accessible by design: skip link, landmarks, logical heading order, ARIA labels/states, visible focus styles and a keyboard-operable menu
+- SEO: unique titles and descriptions, canonical URLs, Open Graph and Twitter cards, JSON-LD `Person` schema, `sitemap.xml` and `robots.txt`
+- Works without JavaScript
 
-**Web Content Writer @ Cyprus International University (_Oct 2017 – May 2018_)**  
-- Produced website and blog content to promote international student initiatives and academic events  
-- Helped improve search rankings and engagement through SEO-focused articles  
+## Folder structure
 
-## Projects
+```
+.
+├── index.html               Home page
+├── pages/
+│   ├── about.html
+│   ├── portfolio.html
+│   ├── skills.html
+│   └── contact.html
+├── css/
+│   ├── style.css            Design tokens, components, themes
+│   └── responsive.css       Tablet & mobile breakpoints
+├── js/
+│   ├── script.js            Theme, nav, animations, filters, transitions
+│   └── form-handler.js      Contact form validation & submission
+├── images/                  Project illustrations, avatar, favicon, social image
+├── sitemap.xml
+├── robots.txt
+└── README.md
+```
 
-### Cardiovascular Disease Prediction  
-Developed machine learning models using **Scikit-learn** to detect heart disease with improved sensitivity and specificity. Evaluated using AUC-ROC and trained with Random Forests, SVMs, and MLPs on public health datasets. Included automated feature engineering pipelines and model explainability with SHAP.
+## Run it locally
 
----
+Use a local web server rather than opening the file directly, so links and fonts behave as they do in production.
 
-### CrepeAway Android Restaurant App  
-Built an Android app in **Kotlin** and **SQLite** to manage orders and inventory in a busy restaurant chain. The app streamlined in-store operations and reduced paper-based inefficiencies. 
+```bash
+py -m http.server 8000      # Windows (macOS/Linux: python3 -m http.server 8000)
+```
 
----
+Then open <http://localhost:8000>.
 
-## Talks & Outreach  
-- Guest Lecture: "Building Scalable Data Systems in Healthcare" – Michigan Tech, Fall 2024  
-- Co-Host: Data Science Peer Circle (monthly knowledge-sharing group for students)  
-- Workshop: "Intro to Git for Beginners" – Remote Session, Spring 2023  
-- Mentor: MIT ReACT Peer Mentorship Program (2022–2023)
+## Editing content
 
-## Awards & Recognition  
-- **QSAP Scholarship Recipient** – Institute of International Education (_2023_)  
-- **President Honor Award** – American University of Afghanistan (3x Recipient)  
-- **Regional Chess Champion** – Western Kabul (_2019_)
+- **Projects**: edit the `<article class="project-card">` blocks in `pages/portfolio.html` (and the three featured ones on `index.html`). Set `data-category` to `data`, `backend` or `architecture` so the filters work. To add a category, add a matching `<button class="filter-btn" data-filter="…">`.
+- **Experience and education**: plain `timeline__item` blocks in `pages/about.html`.
+- **Skills and services**: tag lists and cards in `pages/skills.html`.
+- **Colours**: CSS variables at the top of `css/style.css` (`:root` for light mode, `[data-theme="dark"]` for dark mode).
+- **Images**: replace `images/avatar.svg` with a photo (4:5 ratio, e.g. 960×1200) when you have one, and regenerate `images/og-image.png` (1200×630) if the headline changes.
 
-## Publications  
-1. Peyman, S., et al. "Credential Management Systems: A Scalable Data-Driven Approach to Workforce Compliance in Healthcare" (In preparation)  
-2. Peyman, S. "Automated Credential Export with Django & AWS Zip Generation" – Medium (Draft)  
-3. Peyman, S. "Lessons from Teaching Data Science as a Graduate TA" – LinkedIn Article (2024)
+### Contact form
 
-## Personal Highlights  
-- Fluent in Dari, Pashto, and English; strong cross-cultural communication skills  
-- First-gen university graduate and Afghan education advocate  
-- Interested in using data science to solve global problems in healthcare and public policy  
-- Occasional chess player and indie game developer in Unity
+With no `data-endpoint` on the form, submitting opens the visitor's email app with the message pre-filled, addressed to `data-fallback-email`. To receive messages directly instead, create an endpoint with a service such as [Formspree](https://formspree.io) and set it in `pages/contact.html`:
 
----
- 
-For contact, collaborations, or mentorship, feel free to reach out via [email](mailto:saeed.peyman@gmail.com).
+```html
+<form id="contact-form" ... data-endpoint="https://formspree.io/f/your-id">
+```
 
+## Deploying
+
+The site is served by **GitHub Pages** from the `main` branch, `/ (root)` of the `speyyman/speyyman.github.io` repository (*Settings → Pages*). Pushing to `main` redeploys it.
+
+After changing pages, keep `sitemap.xml` (including `<lastmod>`) in sync.

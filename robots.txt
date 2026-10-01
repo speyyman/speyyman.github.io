@@ -1,0 +1,5 @@
+# Allow all crawlers to index the whole site
+User-agent: *
+Allow: /
+
+Sitemap: https://speyyman.github.io/sitemap.xml
