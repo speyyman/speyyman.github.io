@@ -1,0 +1,2 @@
+Plate Studio, built from github.com/speyyman/plate-engine at 76f1f68448d5a43ce05805367c544eef392179e1.
+Do not edit; rerun scripts/vendor-plate-studio.mjs.

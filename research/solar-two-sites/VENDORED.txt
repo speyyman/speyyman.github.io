@@ -1,0 +1,2 @@
+Figures and PDF from github.com/speyyman/solar-two-sites at 808333d087f65ac8c3ab495a6d3b1615a5f2a8ef.
+Do not edit; rerun scripts/vendor-solar.mjs.
