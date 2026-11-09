@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://speyyman.github.io/sitemap.xml

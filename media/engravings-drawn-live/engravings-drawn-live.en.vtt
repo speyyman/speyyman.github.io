@@ -1,0 +1,73 @@
+WEBVTT
+
+1
+00:00:00.500 --> 00:00:04.800
+Three engravings, each drawn by a program from a few rules.
+
+2
+00:00:05.500 --> 00:00:11.000
+A fern. Four rules, each a small affine map: shrink, turn, shift.
+
+3
+00:00:11.000 --> 00:00:17.500
+Start anywhere. Pick a rule at random, apply it to the last point, mark the result. Repeat.
+
+4
+00:00:17.500 --> 00:00:24.000
+The dice are loaded: 85 in 100 for the frond, 7 each for the two leaflets, 1 for the stem.
+
+5
+00:00:24.000 --> 00:00:30.500
+No rule mentions a leaflet. Each leaflet is a smaller copy of the whole fern.
+
+6
+00:00:30.500 --> 00:00:36.800
+334,176 points. The same four rules every time.
+
+7
+00:00:37.500 --> 00:00:43.000
+A sunflower. One rule: turn, place a seed, step out a little.
+
+8
+00:00:43.000 --> 00:00:50.000
+Seed n sits at an angle of n × 137.508°, at a distance from the centre that grows as √n.
+
+9
+00:00:50.000 --> 00:00:58.000
+The turn is the golden angle, the turn least like any simple fraction of a circle. So no seed lines up with an earlier one.
+
+10
+00:00:58.000 --> 00:01:06.000
+619 seeds. No rule draws the spirals. They appear anyway.
+
+11
+00:01:06.000 --> 00:01:10.000
+Turn 135° instead, three eighths of a circle, and the seeds fall into eight straight rows.
+
+12
+00:01:10.000 --> 00:01:14.000
+Turn 137°, half a degree short, and they curl into arms with gaps between them.
+
+13
+00:01:14.000 --> 00:01:15.800
+Back to 137.508°. No gaps.
+
+14
+00:01:16.500 --> 00:01:22.000
+The moon. A ball, a rough map of seas and craters, and one rule for light.
+
+15
+00:01:22.000 --> 00:01:28.000
+The sun lights one half. At midnight UTC on 23 October 2026, the moon stood about 139° from the sun, seen from Earth.
+
+16
+00:01:28.000 --> 00:01:34.000
+So 88% of the face we see is lit: waxing gibbous. The dark side is drawn faint, so the face stays legible.
+
+17
+00:01:34.000 --> 00:01:39.800
+The seas are placed by hand and the craters at random. The light follows the rule.
+
+18
+00:01:40.500 --> 00:01:45.800
+Rules first. The form follows.

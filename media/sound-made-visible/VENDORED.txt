@@ -1,0 +1,8 @@
+Rendered film from projects/chladni/film, CC BY 4.0 (source commit dc975acab8193f7a55486e530fcaca730f69651d).
+Do not edit; rerun scripts/vendor-chladni.mjs.
+
+18bcaa3503c3ea3ab42ab413973244a2a64d73b8928aeb5db0d53efc1c692820  sound-made-visible-1920x1080.webm
+c691e0766b4d96d6fd35766b005a4e41ab6584c9dde48a9dfa72eba84231ec8c  sound-made-visible-1920x1080.mp4
+6f773448d4bd682beacffaceffdb745e44496288f47ebe4f4d050f85ad67aac2  sound-made-visible-1080x1920.mp4
+90d11f6d0fc5fcddd7fcf70e248515b6214c3342ad4a5ef13697ba727d2d26f1  sound-made-visible-1920x1080-poster.webp
+af02589cebb82ee084b5ea23a87ce08feddbfae75cb8caed0de96d9ef111dda1  sound-made-visible.en.vtt

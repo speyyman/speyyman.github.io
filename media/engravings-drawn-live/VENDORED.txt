@@ -1,0 +1,8 @@
+Rendered from engravings-film (source commit 39535a10a2b8728a50f0699ee43244a4754c9ffd).
+Do not edit; rerun scripts/vendor-engravings.mjs.
+
+374b7e3faf856d9d79cbf3668e8fc1fc2fb05159cba2545bc89933f084efbcd6  engravings-drawn-live-1920x1080.webm
+fb2207ac17f06072a53f7f8993832749a5dd7bb6ca836cce727d9af281ff28d7  engravings-drawn-live-1920x1080.mp4
+9dd533ece03ac3307a29502a59366bf014788e0ae17626ac824eebc5507c14ed  engravings-drawn-live-1080x1920.mp4
+77adc4df171ded802d7edfe568427c7cf90bc4cc45f06afa5566dfb2c265bb09  engravings-drawn-live-1920x1080-poster.webp
+5ab427df8d3d1d30681128eee611f60c2bd892d2658323c01859b329dc81605d  engravings-drawn-live.en.vtt
